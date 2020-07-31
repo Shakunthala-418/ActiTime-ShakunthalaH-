@@ -12,6 +12,17 @@ public class EnterTimeTrackPage
 
 	@FindBy(xpath="//div[text()='Tasks']")
 	private WebElement TasksTab;
+	
+	@FindBy(xpath="//span[text()='New']")
+	private WebElement NewTaskBtn;
+	
+	public WebElement getLogout() {
+		return logout;
+	}
+
+	public WebElement getNewTaskBtn() {
+		return NewTaskBtn;
+	}
 
 	public EnterTimeTrackPage(WebDriver driver) {
 	PageFactory.initElements(driver, this);

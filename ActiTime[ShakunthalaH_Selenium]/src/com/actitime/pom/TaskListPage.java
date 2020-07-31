@@ -30,7 +30,7 @@ public class TaskListPage
 
 	@FindBy(xpath="//div[@class='titleEditButtonContainer']/div[@class='title']")
 	private WebElement VerifyCustomerText;
-
+	
 	public TaskListPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
